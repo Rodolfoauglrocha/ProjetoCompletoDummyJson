@@ -21,6 +21,9 @@ class CartProductsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val cart = intent.getParcelableExtra<Cart>("CART")
+        binding.fabVoltar.setOnClickListener {
+            finish()
+        }
 
         if (cart != null) {
 

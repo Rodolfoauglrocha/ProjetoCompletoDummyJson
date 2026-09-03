@@ -27,6 +27,10 @@ class ProductActivity : AppCompatActivity() {
         binding.rvProducts.layoutManager = LinearLayoutManager(this)
         binding.rvProducts.adapter = adapter
 
+        binding.fabVoltar.setOnClickListener {
+            finish()
+        }
+
         viewModel.products.observe(this) { products ->
             adapter.updateList(products)
         }

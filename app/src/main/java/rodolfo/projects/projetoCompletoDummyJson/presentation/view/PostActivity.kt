@@ -27,6 +27,10 @@ class PostActivity : AppCompatActivity() {
         binding.rvPosts.layoutManager = LinearLayoutManager(this)
         binding.rvPosts.adapter = adapter
 
+        binding.fabVoltar.setOnClickListener {
+            finish()
+        }
+
         viewModel.posts.observe(this) { posts ->
             adapter.updateList(posts)
         }

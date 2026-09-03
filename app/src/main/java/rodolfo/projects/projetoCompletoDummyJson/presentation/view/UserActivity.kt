@@ -26,6 +26,10 @@ class UserActivity : AppCompatActivity() {
         binding.rvUsers.layoutManager = LinearLayoutManager(this)
         binding.rvUsers.adapter = adapter
 
+        binding.fabVoltar.setOnClickListener {
+            finish()
+        }
+
         viewModel.users.observe(this) { users ->
             adapter.updateList(users)
         }
