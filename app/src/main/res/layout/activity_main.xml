@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="2"
+    android:rowCount="2"
+    android:paddingStart="12dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="12dp"
+    android:paddingTop="60dp">
+
+    <!-- CARTS -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCarts"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#42A5F5"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_cart"
+                android:tint="@android:color/white"
+                android:contentDescription="Carts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Carts"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- USERS -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardUsers"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#66BB6A"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_users"
+                android:tint="@android:color/white"
+                android:contentDescription="Users" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Users"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- PRODUCTS -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardProducts"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#FFA726"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_products"
+                android:tint="@android:color/white"
+                android:contentDescription="Products" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Products"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- POSTS -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPosts"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:layout_columnWeight="1"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="#AB47BC"
+        app:cardCornerRadius="22dp"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:src="@drawable/ic_posts"
+                android:tint="@android:color/white"
+                android:contentDescription="Posts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Posts"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</GridLayout>
